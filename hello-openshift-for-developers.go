@@ -9,7 +9,7 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
 	if len(response) == 0 {
-		response = "Hello OpenShift for Developers! ini adalah commit pertama - RDY - Yes!"
+		response = "Hello OpenShift for Developers! ini adalah commit pertama - RDY - Yes - No!"
 	}
 
 	fmt.Fprintln(w, response)
